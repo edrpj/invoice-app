@@ -1,9 +1,9 @@
-import { Component, Input } from "@angular/core";
-import { TypographyVariant } from "../../interfaces/typography.interface";
+import { Component, Input } from '@angular/core';
+import { TypographyVariant } from '../../interfaces';
 
 @Component({
   selector: 'shared-typography',
-  templateUrl: './typography.component.html'
+  templateUrl: './typography.component.html',
 })
 export class TypographyComponent {
   @Input()

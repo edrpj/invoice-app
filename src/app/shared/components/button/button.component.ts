@@ -1,5 +1,5 @@
 import { Component, Input } from "@angular/core";
-import { ButtonVariant } from "../../interfaces/button.interface";
+import { ButtonVariant } from "../../interfaces";
 
 @Component({
   selector: 'shared-button',
