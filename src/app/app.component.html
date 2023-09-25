@@ -1,5 +1,25 @@
-<div class="p-4">
-  <shared-text-field label="Street Address"></shared-text-field>
+<div class="h-screen p-4 bg-light">
+  <shared-dropdown
+    label="Payment Terms"
+    [options]="[
+      {
+        value: '1-day',
+        label: 'Net 1 Day'
+      },
+      {
+        value: '7-days',
+        label: 'Net 7 Days'
+      },
+      {
+        value: '14-days',
+        label: 'Net 14 Days'
+      },
+      {
+        value: '30-days',
+        label: 'Net 30 Days'
+      }
+    ]"
+  ></shared-dropdown>
 
-  <router-outlet></router-outlet>
+  <!-- <router-outlet></router-outlet> -->
 </div>
