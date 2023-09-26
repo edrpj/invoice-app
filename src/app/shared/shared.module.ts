@@ -4,6 +4,7 @@ import { TypographyComponent } from './components/typography/typography.componen
 import { ButtonComponent } from './components/button/button.component';
 import { TextFieldComponent } from './components/text-field/text-field.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
+import { ClickOutsideDirective } from './directives/click-outside.directive';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { DropdownComponent } from './components/dropdown/dropdown.component';
     ButtonComponent,
     TextFieldComponent,
     DropdownComponent,
+    ClickOutsideDirective
   ],
   imports: [CommonModule],
   exports: [
@@ -18,6 +20,7 @@ import { DropdownComponent } from './components/dropdown/dropdown.component';
     ButtonComponent,
     TextFieldComponent,
     DropdownComponent,
+    ClickOutsideDirective
   ],
 })
 export class SharedModule {}

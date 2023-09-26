@@ -1,8 +1,12 @@
-<label *ngIf="label" class="block pb-2 text-brand-blue-800 dark:text-brand-blue-300">{{ label }}</label>
+<label
+  *ngIf="label"
+  class="block pb-2 text-brand-blue-800 dark:text-brand-blue-300"
+  >{{ label }}</label
+>
 
-<div class="w-full">
+<div class="w-full" clickOutside (clickOutside)="clickedOutside()">
   <div
-    class="flex justify-between items-center w-full h-14 px-6 border-2 bg-white border-brand-blue-300 rounded-md cursor-pointer focus:outline-none focus:ring-0 focus:border-primary-500 dark:bg-secondary-900 dark:border-secondary-700"
+    class="flex justify-between items-center w-full h-14 px-6 border-2 bg-white border-brand-blue-300 rounded-md cursor-pointer outline-none ring-0 hover:border-primary-500 focus: dark:bg-secondary-900 dark:border-secondary-700 dark:hover:border-secondary-700"
     (click)="toggleDropdown()"
   >
     <span class="text-xl text-dark-900 font-bold dark:text-white">{{
@@ -11,7 +15,10 @@
     <i class="fa-solid fa-angle-down text-xl text-primary-800"></i>
   </div>
 
-  <div *ngIf="isDropdownOpen" class="w-full mt-6 bg-white rounded-xl shadow-xl dark:bg-secondary-900">
+  <div
+    *ngIf="isDropdownOpen"
+    class="w-full mt-6 bg-white rounded-xl shadow-xl dark:bg-secondary-900"
+  >
     <div
       *ngFor="let option of options"
       class="flex items-center w-full h-14 px-6 border-b-2 border-brand-blue-300 text-xl text-dark-900 font-bold cursor-pointer hover:text-primary-800 dark:text-white dark:border-secondary-700"

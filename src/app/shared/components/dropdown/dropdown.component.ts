@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { DropdownOption } from '../../interfaces';
 
 @Component({
@@ -24,5 +24,9 @@ export class DropdownComponent {
 
   toggleDropdown(): void {
     this.isDropdownOpen = !this.isDropdownOpen;
+  }
+
+  clickedOutside(): void {
+    this.isDropdownOpen = false;
   }
 }
