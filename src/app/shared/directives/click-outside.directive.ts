@@ -17,7 +17,7 @@ export class ClickOutsideDirective implements AfterViewInit, OnDestroy {
   @Output()
   public clickOutside = new EventEmitter<void>();
 
-  documentClickSubscription: Subscription | undefined;
+  private documentClickSubscription: Subscription | undefined;
 
   constructor(
     private element: ElementRef,
