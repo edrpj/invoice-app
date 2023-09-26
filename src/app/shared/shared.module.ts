@@ -5,22 +5,25 @@ import { ButtonComponent } from './components/button/button.component';
 import { TextFieldComponent } from './components/text-field/text-field.component';
 import { DropdownComponent } from './components/dropdown/dropdown.component';
 import { ClickOutsideDirective } from './directives/click-outside.directive';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
-    TypographyComponent,
     ButtonComponent,
-    TextFieldComponent,
+    ClickOutsideDirective,
     DropdownComponent,
-    ClickOutsideDirective
+    SidebarComponent,
+    TextFieldComponent,
+    TypographyComponent,
   ],
   imports: [CommonModule],
   exports: [
-    TypographyComponent,
     ButtonComponent,
-    TextFieldComponent,
+    ClickOutsideDirective,
     DropdownComponent,
-    ClickOutsideDirective
+    SidebarComponent,
+    TextFieldComponent,
+    TypographyComponent,
   ],
 })
 export class SharedModule {}

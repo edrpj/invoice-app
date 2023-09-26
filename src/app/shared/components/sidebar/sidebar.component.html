@@ -1,0 +1,42 @@
+<div
+  class="flex flex-col w-24 h-screen bg-secondary-600 rounded-r-3xl dark:bg-secondary-900"
+>
+  <div
+    class="flex items-end flex-initial w-full h-28 bg-primary-800 rounded-r-3xl"
+  >
+    <div class="w-full h-12 bg-primary-500 rounded-tl-3xl rounded-br-3xl">
+      <img
+        class="relative bottom-5 left-7 w-10 h-10"
+        src="assets/logo.svg"
+        alt="logo"
+      />
+    </div>
+  </div>
+  <div class="flex justify-center items-end flex-auto w-full h-full pb-9">
+    <img
+      *ngIf="!darkMode()"
+      (click)="darkMode.set(!darkMode())"
+      class="w-7 h-7 cursor-pointer"
+      src="assets/icon-moon.svg"
+      alt="icon-moon"
+    />
+    <img
+      *ngIf="darkMode()"
+      (click)="darkMode.set(!darkMode())"
+      class="w-7 h-7 cursor-pointer"
+      src="assets/icon-sun.svg"
+      alt="icon-moon"
+    />
+  </div>
+  <div
+    class="flex justify-center items-center flex-initial w-full h-28 border-t border-brand-blue-800"
+  >
+    <div class="h-10 w-10 rounded-full overflow-hidden">
+      <img
+        class="w-full h-full object-cover"
+        src="assets/image-avatar.jpg"
+        alt="avatar"
+      />
+    </div>
+  </div>
+</div>
