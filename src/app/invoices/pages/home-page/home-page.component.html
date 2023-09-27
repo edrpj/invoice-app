@@ -1,1 +1,17 @@
-<h1>Home Page</h1>
+<div class="flex justify-center w-full h-screen overflow-auto">
+  <div class="w-7/12 max-w-screen-2xl  mt-20">
+
+    <div class="flex justify-between items-center w-full ">
+      <div>
+        <shared-typography class="dark:text-white" text="Invoices" />
+        <p class="mt-1 text-sm text-brand-blue-800 dark:text-brand-blue-300">There are {{ invoices.length }} total invoices</p>
+      </div>
+
+      <div>
+        <shared-button label="New Invoice" />
+      </div>
+    </div>
+
+    <invoices-list [invoices]="invoices" />
+  </div>
+</div>

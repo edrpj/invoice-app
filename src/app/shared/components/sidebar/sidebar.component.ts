@@ -5,7 +5,6 @@ import { Component, HostBinding, Input, WritableSignal, signal } from "@angular/
   templateUrl: './sidebar.component.html'
 })
 export class SidebarComponent {
-
   @Input()
   public darkMode: WritableSignal<boolean> = signal<boolean>(false);
 }

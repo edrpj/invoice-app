@@ -1,29 +1,33 @@
-<div class="w-screen h-screen bg-light dark:bg-dark-800">
+<div class="flex w-screen h-screen bg-light dark:bg-dark-800">
   <shared-sidebar [darkMode]="darkMode" />
 
   <!-- <shared-text-field label="Street Address" inputType="text" /> -->
 
-  <!-- <shared-dropdown
-    label="Payment Terms"
-    [options]="[
-      {
-        value: '1-day',
-        label: 'Net 1 Day'
-      },
-      {
-        value: '7-days',
-        label: 'Net 7 Days'
-      },
-      {
-        value: '14-days',
-        label: 'Net 14 Days'
-      },
-      {
-        value: '30-days',
-        label: 'Net 30 Days'
-      }
-    ]"
-  ></shared-dropdown> -->
+  <!-- <div class="w-full p-2">
+    <shared-dropdown
+      label="Payment Terms"
+      [options]="[
+        {
+          value: '1-day',
+          label: 'Net 1 Day'
+        },
+        {
+          value: '7-days',
+          label: 'Net 7 Days'
+        },
+        {
+          value: '14-days',
+          label: 'Net 14 Days'
+        },
+        {
+          value: '30-days',
+          label: 'Net 30 Days'
+        }
+      ]"
+    ></shared-dropdown>
+  </div> -->
 
-  <!-- <router-outlet></router-outlet> -->
+  <div class="w-full">
+    <router-outlet />
+  </div>
 </div>
