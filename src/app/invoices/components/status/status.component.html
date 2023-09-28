@@ -1,20 +1,20 @@
 <div
   *ngIf="status === 'paid'"
-  class="flex justify-center items-center w-28 h-12 bg-brand-green-100 text-brand-green-600 font-bold rounded-lg"
+  class="flex justify-center items-center w-28 h-12 bg-brand-green-100 text-brand-green-600 font-bold rounded-lg dark:bg-brand-green-900"
 >
   <span class="text-3xl mr-1">•</span> Paid
 </div>
 
 <div
   *ngIf="status === 'pending'"
-  class="flex justify-center items-center w-28 h-12 bg-brand-orange-100 text-brand-orange-600 font-bold rounded-lg"
+  class="flex justify-center items-center w-28 h-12 bg-brand-orange-100 text-brand-orange-600 font-bold rounded-lg dark:bg-brand-orange-900"
 >
   <span class="text-3xl mr-1">•</span> Pending
 </div>
 
 <div
   *ngIf="status === 'draft'"
-  class="flex justify-center items-center w-28 h-12 bg-brand-gray-200 text-secondary-700 font-bold rounded-lg"
+  class="flex justify-center items-center w-28 h-12 bg-brand-gray-200 text-secondary-700 font-bold rounded-lg dark:bg-brand-blue-900 dark:text-brand-blue-300"
 >
   <span class="text-3xl mr-1">•</span> Draft
 </div>
